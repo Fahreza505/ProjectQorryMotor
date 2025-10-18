@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QorryMotor — Bengkel Motor & Servis Terpercaya</title>
+    <link rel="stylesheet" href="styl.css">
+    <meta name="description" content="QorryMotor — Bengkel motor profesional sejak 2016. Servis cepat, sparepart asli, garansi pekerjaan.">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="beranda.html">QorryMotor</a>
+            <nav class="main-nav" aria-label="Navigasi utama">
+                <a href="beranda.html">Beranda</a>
+                <a href="produk.html">Produk & Suku Cadang</a>
+                <a href="lokasi.html">Lokasi & Kontak</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>Selamat Datang di QorryMotor</h1>
+                    <p class="lead">Bengkel motor profesional sejak 2016 — servis cepat, suku cadang asli, dan garansi kerja.</p>
+                    <p class="hero-ctas">
+                        <a class="btn primary" href="lokasi.html">Buat Janji Sekarang</a>
+                        <a class="btn outline" href="produk.html">Lihat Produk</a>
+                    </p>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <!-- Simple SVG illustration -->
+                    <svg width="320" height="220" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" class="illustration">
+                        <defs>
+                            <linearGradient id="g" x1="0" x2="1">
+                                <stop offset="0" stop-color="#ff7a18"/>
+                                <stop offset="1" stop-color="#af002d"/>
+                            </linearGradient>
+                        </defs>
+                        <rect rx="16" width="320" height="220" fill="url(#g)" opacity="0.12"/>
+                        <g fill="#333" transform="translate(24,36)">
+                            <circle cx="72" cy="68" r="36" fill="#fff" opacity="0.14"/>
+                            <rect x="130" y="50" width="88" height="56" rx="8" fill="#fff" opacity="0.12"/>
+                            <path d="M20 160c24-40 72-56 112-40" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.12"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Layanan Unggulan</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Servis Ringan & Tune-up & Overhaul</h3>
+                        <p>Ganti oli, penyetelan karburator/injeksi, pengecekan sistem kelistrikan — cepat dan rapi.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Perbaikan Mesin</h3>
+                        <p>Dari overhaul ringan hingga perbaikan besar, teknisi berpengalaman siap membantu.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Suku Cadang & Aksesoris</h3>
+                        <p>Stok suku cadang asli dan aftermarket berkualitas. Tersedia pemasangan di tempat.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2>Tentang QorryMotor</h2>
+                <p>Didirikan pada 2016, QorryMotor berkomitmen memberikan layanan terbaik dengan harga transparan. Kami menggunakan suku cadang terpercaya dan memberikan garansi pekerjaan untuk ketenangan Anda.</p>
+                <p class="muted">Jam operasional: Senin–Sabtu, 08:00–17:00 • Telepon: <a href="tel:+628123456789">+62 812-3456-789</a></p>
+            </div>
+        </section>
+
+        <section class="cta-promo">
+            <div class="container cta-inner">
+                <div>
+                    <h3>Butuh servis cepat?</h3>
+                    <p>Pesan tempat sekarang dan dapatkan pemeriksaan gratis (10 poin) untuk setiap servis lengkap.</p>
+                </div>
+                <div>
+                    <a class="btn primary large" href="lokasi.html">Buat Janji</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <strong>QorryMotor</strong>
+                <p>Jl. Contoh No.1 — Melayani servis motor umum & kustom.</p>
+            </div>
+            <div class="footer-links">
+                <a href="produk.html">Produk</a>
+                <a href="lokasi.html">Lokasi</a>
+            </div>
+        </div>
+        <div class="copyright">© 2016–<span id="year"></span> QorryMotor. Semua hak dilindungi.</div>
+    </footer>
+
+    <script>
+        // Small UX helpers
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
