@@ -4,110 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QorryMotor — Bengkel Motor & Servis Terpercaya</title>
-    <link rel="stylesheet" href="styl.css">
     <meta name="description" content="QorryMotor — Bengkel motor profesional sejak 2016. Servis cepat, sparepart asli, garansi pekerjaan.">
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <!-- ✅ Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ✅ Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                colors: {
+                clifford: '#af002d',
+                }
+            }
+            }
+        }
+    </script>
 </head>
-<body>
-    <header class="site-header">
-        <div class="container header-inner">
-            <a class="brand" href="beranda.html">QorryMotor</a>
-            <nav class="main-nav" aria-label="Navigasi utama">
-                <a href="beranda.html">Beranda</a>
-                <a href="produk.html">Produk & Suku Cadang</a>
-                <a href="lokasi.html">Lokasi & Kontak</a>
+
+<body class="font-sans text-[#222] bg-gradient-to-b from-white to-[#f7f9fb] antialiased">
+    <!-- Header -->
+    <header class="bg-white border-b border-black/5 sticky top-0 z-40">
+        <div class="max-w-[1080px] mx-auto px-5 flex items-center justify-between py-4">
+            <a href="beranda.html" class="font-bold text-[#af002d] text-xl no-underline">QorryMotor</a>
+            <nav class="flex space-x-5 font-semibold text-[#333]">
+            <a href="beranda.html" class="hover:text-[#af002d]">Beranda</a>
+            <a href="produk.html" class="hover:text-[#af002d]">Produk & Suku Cadang</a>
+            <a href="lokasi.html" class="hover:text-[#af002d]">Lokasi & Kontak</a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-inner">
-                <div class="hero-text">
-                    <h1>Selamat Datang di QorryMotor</h1>
-                    <p class="lead">Bengkel motor profesional sejak 2016 — servis cepat, suku cadang asli, dan garansi kerja.</p>
-                    <p class="hero-ctas">
-                        <a class="btn primary" href="lokasi.html">Buat Janji Sekarang</a>
-                        <a class="btn outline" href="produk.html">Lihat Produk</a>
-                    </p>
-                </div>
-                <div class="hero-visual" aria-hidden="true">
-                    <!-- Simple SVG illustration -->
-                    <svg width="320" height="220" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" class="illustration">
-                        <defs>
-                            <linearGradient id="g" x1="0" x2="1">
-                                <stop offset="0" stop-color="#ff7a18"/>
-                                <stop offset="1" stop-color="#af002d"/>
-                            </linearGradient>
-                        </defs>
-                        <rect rx="16" width="320" height="220" fill="url(#g)" opacity="0.12"/>
-                        <g fill="#333" transform="translate(24,36)">
-                            <circle cx="72" cy="68" r="36" fill="#fff" opacity="0.14"/>
-                            <rect x="130" y="50" width="88" height="56" rx="8" fill="#fff" opacity="0.12"/>
-                            <path d="M20 160c24-40 72-56 112-40" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.12"/>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-        </section>
-
-        <section class="services">
-            <div class="container">
-                <h2>Layanan Unggulan</h2>
-                <div class="cards">
-                    <article class="card">
-                        <h3>Servis Ringan & Tune-up & Overhaul</h3>
-                        <p>Ganti oli, penyetelan karburator/injeksi, pengecekan sistem kelistrikan — cepat dan rapi.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Perbaikan Mesin</h3>
-                        <p>Dari overhaul ringan hingga perbaikan besar, teknisi berpengalaman siap membantu.</p>
-                    </article>
-                    <article class="card">
-                        <h3>Suku Cadang & Aksesoris</h3>
-                        <p>Stok suku cadang asli dan aftermarket berkualitas. Tersedia pemasangan di tempat.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <div class="container">
-                <h2>Tentang QorryMotor</h2>
-                <p>Didirikan pada 2016, QorryMotor berkomitmen memberikan layanan terbaik dengan harga transparan. Kami menggunakan suku cadang terpercaya dan memberikan garansi pekerjaan untuk ketenangan Anda.</p>
-                <p class="muted">Jam operasional: Senin–Sabtu, 08:00–17:00 • Telepon: <a href="tel:+628123456789">+62 812-3456-789</a></p>
-            </div>
-        </section>
-
-        <section class="cta-promo">
-            <div class="container cta-inner">
-                <div>
-                    <h3>Butuh servis cepat?</h3>
-                    <p>Pesan tempat sekarang dan dapatkan pemeriksaan gratis (10 poin) untuk setiap servis lengkap.</p>
-                </div>
-                <div>
-                    <a class="btn primary large" href="lokasi.html">Buat Janji</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div>
-                <strong>QorryMotor</strong>
-                <p>Jl. Contoh No.1 — Melayani servis motor umum & kustom.</p>
-            </div>
-            <div class="footer-links">
-                <a href="produk.html">Produk</a>
-                <a href="lokasi.html">Lokasi</a>
+<main>
+    <!-- Hero -->
+    <section class="py-11">
+        <div class="max-w-[1080px] mx-auto px-5 flex flex-col-reverse md:flex-row items-center gap-8">
+        <div class="flex-1">
+            <h1 class="text-3xl md:text-4xl font-bold text-[#111] mb-3">Selamat Datang di <span class="text-[#af002d]">  QorryMotor </span></h1>
+            <p class="text-[#444] mb-4">Bengkel motor profesional sejak 2016 — servis cepat, suku cadang asli, dan garansi kerja.</p>
+            <div class="space-x-3">
+            <a href="lokasi.html" class="inline-block px-4 py-2 rounded-lg font-bold text-white bg-gradient-to-r from-[#ff7a18] to-[#af002d]">Buat Janji Sekarang</a>
+            <a href="produk.html" class="inline-block px-4 py-2 rounded-lg font-bold border-2 border-[#af002d] text-[#af002d]">Lihat Produk</a>
             </div>
         </div>
-        <div class="copyright">© 2016–<span id="year"></span> QorryMotor. Semua hak dilindungi.</div>
+        <div class="flex justify-center items-center w-full md:w-[340px]" aria-hidden="true">
+            <svg width="320" height="220" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" class="max-w-full h-auto">
+            <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#ff7a18"/>
+                <stop offset="1" stop-color="#af002d"/>
+                </linearGradient>
+            </defs>
+            <rect rx="16" width="320" height="220" fill="url(#g)" opacity="0.12"/>
+            <g fill="#333" transform="translate(24,36)">
+                <circle cx="72" cy="68" r="36" fill="#fff" opacity="0.14"/>
+                <rect x="130" y="50" width="88" height="56" rx="8" fill="#fff" opacity="0.12"/>
+                <path d="M20 160c24-40 72-56 112-40" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.12"/>
+            </g>
+            </svg>
+        </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-7">
+        <div class="max-w-[1080px] mx-auto px-5">
+        <h2 class="text-2xl font-semibold mb-4">Layanan Unggulan</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <article class="bg-white p-5 rounded-xl shadow-[0_6px_18px_rgba(18,24,40,0.06)]">
+            <h3 class="font-semibold mb-2">Servis Ringan & Tune-up & Overhaul</h3>
+            <p>Ganti oli, penyetelan karburator/injeksi, pengecekan sistem kelistrikan — cepat dan rapi.</p>
+            </article>
+            <article class="bg-white p-5 rounded-xl shadow-[0_6px_18px_rgba(18,24,40,0.06)]">
+            <h3 class="font-semibold mb-2">Perbaikan Mesin</h3>
+            <p>Dari overhaul ringan hingga perbaikan besar, teknisi berpengalaman siap membantu.</p>
+            </article>
+            <article class="bg-white p-5 rounded-xl shadow-[0_6px_18px_rgba(18,24,40,0.06)]">
+            <h3 class="font-semibold mb-2">Suku Cadang & Aksesoris</h3>
+            <p>Stok suku cadang asli dan aftermarket berkualitas. Tersedia pemasangan di tempat.</p>
+            </article>
+        </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="py-6">
+        <div class="max-w-[1080px] mx-auto px-5">
+        <h2 class="text-2xl font-semibold mb-3">Tentang QorryMotor</h2>
+        <p class="mb-2">Didirikan pada 2016, QorryMotor berkomitmen memberikan layanan terbaik dengan harga transparan. Kami menggunakan suku cadang terpercaya dan memberikan garansi pekerjaan untuk ketenangan Anda.</p>
+        <p class="flex text-[#666] text-sm"> Jam operasional: <a data-lucide="calendar" class="items-center h-4 w-4 mx-1"> </a> Senin-Sabtu,<a data-lucide="clock" class="items-center h-4 w-4 mx-1"> </a>  07:00-17:00 • <a data-lucide="phone     " class="items-center h-4 w-4 mx-1"> </a> Telepon: <a href="tel:+628123456789" class="text-[#af002d] hover:underline mx-1">+62 812-3456-789</a></p>
+        <p class="flex text-[#666] text-sm"> Lokasi QorryMotor: <a href="https://maps.app.goo.gl/veLAq1YfKroSwUK56?g_st=iw"  target="_blank" class="text-[#af002d] hover:underline mx-1"> https://maps.app.goo.gl/veLAq1YfKroSwUK56?g_st=iw </a> </p>
+        </div>
+    </section>
+
+    <!-- CTA Promo -->
+    <section class="bg-gradient-to-r from-[#ffecd2] to-[#ffd1d8] rounded-xl my-5 py-5">
+        <div class="max-w-[1080px] mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div>
+            <h3 class="text-xl font-semibold mb-1">Butuh servis cepat?</h3>
+            <p>Pesan tempat sekarang dan dapatkan pemeriksaan gratis (10 poin) untuk setiap servis lengkap.</p>
+        </div>
+        <div>
+            <a href="lokasi.html" class="inline-block px-5 py-3 rounded-lg font-bold text-white text-[1.05rem] bg-gradient-to-r from-[#ff7a18] to-[#af002d]">Buat Janji</a>
+        </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="mt-6 py-5 text-[#444]">
+    <div class="max-w-[1080px] mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div>
+        <strong>QorryMotor</strong>
+        <p>Belendung, Klari, Karawang, West Java 41371 — Melayani servis motor umum & kustom.</p>
+        </div>
+        <div class="flex space-x-3">
+        <a href="produk.html" class="text-[#333] hover:text-[#af002d]">Produk</a>
+        <a href="lokasi.html" class="text-[#333] hover:text-[#af002d]">Lokasi</a>
+        </div>
+    </div>
+    <div class="text-center text-sm text-[#888] mt-10">© 2016–<span id="year"></span> QorryMotor. Semua hak dilindungi.</div>
     </footer>
 
     <script>
-        // Small UX helpers
+        lucide.createIcons();
+
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
